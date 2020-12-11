@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .button {
+            border: 1px solid blanchedalmond;
+            border-radius: 5px;
+            padding:5px;
+        }
+    </style>
+    <script>
+        function addRow() {
+            let data1 = document.getElementById("data1");
+            let tr = document.createElement("tr");
+            let td1 = document.createElement("td");
+            let td2 = document.createElement("td");
+            tr.appendChild(td1);
+            tr.appendChild(td2);
+            data1.appendChild(tr);
+            td1.innerHTML = "GG";
+            td2.innerHTML = "EE";
+        }
+    </script>
+</head>
+
+<body>
+    <table border="1" id="data1">
+        <tr>
+            <td>AA</td>
+            <td>BB</td>
+        </tr>
+        <tr>
+            <td>CC</td>
+            <td>DD</td>
+        </tr>
+    </table>
+    <div onclick="addRow()" class="button">Add</div>
+</body>
+
+</html>
